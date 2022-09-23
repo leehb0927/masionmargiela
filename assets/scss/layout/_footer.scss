@@ -1,0 +1,51 @@
+.footer {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fff;
+    @include tablet {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    @include mobile {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    .add-link {
+        display: flex;
+        @include tablet {
+            flex-direction: column;
+            text-align: center;
+        }
+        @include mobile {
+            flex-direction: column;
+            text-align: center;
+        }
+        .link-item {
+            display: inline-block;
+            padding: 0 5vw;
+            @include tablet {
+                padding: 2vh 0;
+            }
+            @include mobile {
+                padding: 2vh 0;
+            }
+            a {
+                display: block;
+                font-size: clamp(50px,4vw,100px);
+                font-weight: 700;
+                @include tablet {
+                    font-size: 5vw;
+                    font-weight: 600;
+                }
+                @include mobile {
+                    font-size: 5vw;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

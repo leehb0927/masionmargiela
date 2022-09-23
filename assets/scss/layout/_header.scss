@@ -1,0 +1,62 @@
+.header {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    @include mobile {
+        background: #fff;
+        border-bottom: 1px solid #000;
+    }
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 4vh 3vw;
+        &.active {
+            color: #fff;
+        }
+        //1281  부터 간격 좁아짐
+        @include tablet {
+            padding: 4vh 3vw;
+        }
+        @include mobile {
+            padding: 2vh 3vw;
+        }
+    }
+    .logo {
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        font-family:'WorkSans-Medium';
+        @include mobile {
+            display: none;
+        }
+    }
+    .m-logo {
+        display: none;
+        @include mobile {
+            display: block;
+            transition: color .15s 0s ease;
+            font-size: 22px;
+            font-family:'WorkSans-Medium';
+        }
+    }
+    .link {
+        @include mobile {
+            display: none;
+        }
+        a {
+            display: block;
+            font-size: 14px;
+            float: right;
+        }
+    }
+    .m-link {
+        display: none;
+        @include mobile {
+            display: block;
+            display: block;
+            transition: color .15s 0s ease;
+        }
+        a {}
+    }
+}

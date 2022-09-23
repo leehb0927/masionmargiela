@@ -1,0 +1,18 @@
+@font-face {
+    font-family:'WorkSans-Light';
+    src: url(../fonts/WorkSans-Light.woff2) format('woff2');
+    font-weight: 300;
+};
+@font-face {
+    font-family:'WorkSans-Medium';
+    src: url(../fonts/WorkSans-Medium.woff2) format('woff2');
+    font-weight: 400;
+};
+@font-face {
+    font-family:'WorkSans-SemiBold';
+    src: url(../fonts/WorkSans-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;500;700&display=swap');
+/*font-family: 'Cormorant', serif;*/
